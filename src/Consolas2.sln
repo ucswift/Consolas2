@@ -1,0 +1,72 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29326.143
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Consolas2.Core", "Consolas2.Core\Consolas2.Core.csproj", "{CD094AB4-B9C6-40C2-B28C-643128B8C5AC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NuGet", "NuGet", "{2454F3D5-8DCB-4657-8495-64C9CD8E667C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Consolas2", "Consolas2", "{33052CDC-93EA-44EA-ABC5-D38E9239CBEE}"
+	ProjectSection(SolutionItems) = preProject
+		..\NuGet\Consolas2\Consolas2.nuspec = ..\NuGet\Consolas2\Consolas2.nuspec
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "content", "content", "{F556A059-F8AD-4EAE-9F0B-DD6285E50615}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Args", "Args", "{CB1B9C50-13F2-4ACB-9DCD-918F0790337F}"
+	ProjectSection(SolutionItems) = preProject
+		..\NuGet\Consolas2\content\Args\HelpArgs.cs.pp = ..\NuGet\Consolas2\content\Args\HelpArgs.cs.pp
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Commands", "Commands", "{9ECE4719-DE79-40B7-A915-46CC20668CE0}"
+	ProjectSection(SolutionItems) = preProject
+		..\NuGet\Consolas2\content\Commands\HelpCommand.cs.pp = ..\NuGet\Consolas2\content\Commands\HelpCommand.cs.pp
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Views", "Views", "{EF94FCDB-DA67-4FF4-9A96-618B8F83CAA1}"
+	ProjectSection(SolutionItems) = preProject
+		..\NuGet\Consolas2\content\Views\Default.template.pp = ..\NuGet\Consolas2\content\Views\Default.template.pp
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UnitTests", "UnitTests", "{6227A0FE-9EE7-444B-935A-9234B9A290FE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Consolas2.Tests", "UnitTests\Consolas2.Tests\Consolas2.Tests.csproj", "{5A0C029A-6D65-412E-9974-3AE9D15410B4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{9EC2DD58-3B8C-4F16-A4BE-3291406EE893}"
+	ProjectSection(SolutionItems) = preProject
+		..\.editorconfig = ..\.editorconfig
+		..\LICENSE = ..\LICENSE
+		..\README.md = ..\README.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CD094AB4-B9C6-40C2-B28C-643128B8C5AC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD094AB4-B9C6-40C2-B28C-643128B8C5AC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD094AB4-B9C6-40C2-B28C-643128B8C5AC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD094AB4-B9C6-40C2-B28C-643128B8C5AC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5A0C029A-6D65-412E-9974-3AE9D15410B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A0C029A-6D65-412E-9974-3AE9D15410B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A0C029A-6D65-412E-9974-3AE9D15410B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A0C029A-6D65-412E-9974-3AE9D15410B4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{33052CDC-93EA-44EA-ABC5-D38E9239CBEE} = {2454F3D5-8DCB-4657-8495-64C9CD8E667C}
+		{F556A059-F8AD-4EAE-9F0B-DD6285E50615} = {33052CDC-93EA-44EA-ABC5-D38E9239CBEE}
+		{CB1B9C50-13F2-4ACB-9DCD-918F0790337F} = {F556A059-F8AD-4EAE-9F0B-DD6285E50615}
+		{9ECE4719-DE79-40B7-A915-46CC20668CE0} = {F556A059-F8AD-4EAE-9F0B-DD6285E50615}
+		{EF94FCDB-DA67-4FF4-9A96-618B8F83CAA1} = {F556A059-F8AD-4EAE-9F0B-DD6285E50615}
+		{5A0C029A-6D65-412E-9974-3AE9D15410B4} = {6227A0FE-9EE7-444B-935A-9234B9A290FE}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CDD312B7-FA60-4EA6-B555-B48F4F8AC403}
+	EndGlobalSection
+EndGlobal
