@@ -5,6 +5,9 @@ Consolas2 is a dotnetcore update to the Consolas console application framework d
 
 *********
 
+[![Build status](https://ci.appveyor.com/api/projects/status/github/ucswift/consolas2?svg=true)](https://ci.appveyor.com/api/projects/status/github/ucswift/consolas2)
+<a href="https://github.com/ucswift/Consolas2/blob/master/LICENSE"><img src="https://img.shields.io/github/license/ucswift/consolas2.svg" alt="License" /></a>
+
 # Deltas to the Original Consolas
 - No RazorEngine view engine support
 - Nustache dependency replaced with Stubble
