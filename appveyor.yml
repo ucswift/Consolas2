@@ -14,4 +14,4 @@ before_build:
   - nuget restore
 
 build:
-  project: src\Consolas2.sln
+  project: src/Consolas2.sln

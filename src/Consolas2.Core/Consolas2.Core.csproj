@@ -1,7 +1,22 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageId>Consolas2</PackageId>
+    <Authors>Shawn Jackson</Authors>
+    <Company>Resgrid, LLC.</Company>
+    <Product>Consolas2</Product>
+    <Description>Consolas2 is a console application framework, utilizing Consolas by Rickard Nilsson, but migrated to .Net Standard and providing a convention based approach to quickly building console apps. The framework is suited both for small throw away apps to large multi sub command apps with lots of arguments.</Description>
+    <Copyright>Copyright (c) 2019 Shawn Jackson</Copyright>
+    <PackageProjectUrl>https://github.com/ucswift/Consolas2</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/ucswift/Consolas2.git</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageLicenseExpression>BSD-2-Clause</PackageLicenseExpression>
+    <PackageIconUrl>https://resgrid.com/images/resgrid-icon-pinpoint.png</PackageIconUrl>
+    <NeutralLanguage>en</NeutralLanguage>
+    <PackageTags>cli; console; framework; mustache; dotnet;</PackageTags>
+    <PackageReleaseNotes>Initial release</PackageReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup>

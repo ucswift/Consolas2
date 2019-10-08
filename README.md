@@ -8,12 +8,12 @@ Consolas2 is a dotnetcore update to the Consolas console application framework d
 [![Build status](https://ci.appveyor.com/api/projects/status/github/ucswift/consolas2?svg=true)](https://ci.appveyor.com/api/projects/status/github/ucswift/consolas2)
 <a href="https://github.com/ucswift/Consolas2/blob/master/LICENSE"><img src="https://img.shields.io/github/license/ucswift/consolas2.svg" alt="License" /></a>
 
-# Deltas to the Original Consolas
+# Deltas to the original Consolas
 - No RazorEngine view engine support
 - Nustache dependency replaced with Stubble
 - Assembly migrated to .NetStandard 2.0, unit tests are DotNetCore 3.0
 
-Goals of this update were to use core Consolas functionality in .Net Framework and DotNetCore based applications. Utilizing .NetStandard 2.0 the assembly will work cross framework.
+Goals of this update were to use core Consolas functionality in .Net Framework and DotNetCore based applications. Utilizing .NetStandard 2.0 the assembly will work cross framework. A factor in migrating to .Net Standard you will need to manually create the "Args", "Commands" and "Views" folders in your console application.
 
 
 # Features
@@ -29,6 +29,20 @@ Simply create a new Console Application and install the Nuget package [Consolas2
 <pre>
 PM> Install-Package Consolas2
 </pre>
+
+After installation you will need to create 3 Directories in the root of your Console application, "Args", "Commands" and "Views". Your structure will look like the one below.
+
+<pre>
+Console App
+   |-> Args
+       |-> [MyParam]Args.cs
+   |-> Commands
+       |-> [MyParam]Command.cs
+   |-> Views
+       |-> [MyParam].template
+</pre>
+
+At a minimum you need a file in the Args directory (i.e. HelpArgs.cs) and in the Commands directory (i.e. HelpCommand.cs) for all the commands you want your cli application to accept. 
 
 ## Simple example
 
